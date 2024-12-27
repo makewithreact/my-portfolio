@@ -33,7 +33,7 @@ export function Header() {
 
 
   return (
-    <header className="w-full border-b">
+    <header className="w-full bg-white border-b">
       <div className="w-full max-w-4xl p-4 mx-auto flex justify-between gap-3">
         <div className="flex items-center gap-1">
           <span className="text-2xl font-bold">My</span>
