@@ -17,8 +17,8 @@ export function MobileMenu({ menu }: { menu: Menu[] }) {
       <DropdownMenuContent className="w-full min-w-[200px]">
         {
           menu.map((item, index) => (
-            <>
-              <DropdownMenuItem key={index}>
+            <div key={index}>
+              <DropdownMenuItem>
                 {item.name}
               </DropdownMenuItem>
               {
@@ -26,7 +26,7 @@ export function MobileMenu({ menu }: { menu: Menu[] }) {
                   <DropdownMenuSeparator />
                 )
               }
-            </>
+            </div>
           ))
         }
       </DropdownMenuContent>
