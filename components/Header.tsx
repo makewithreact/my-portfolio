@@ -1,8 +1,14 @@
 import Link from 'next/link'
 import { Button } from './ui/button'
+import { MobileMenu } from './MobileMenu'
+
+export interface Menu {
+  name: string
+  link: string
+}
 
 export function Header() {
-  const menu = [
+  const menu: Menu[] = [
     {
       name: "Home",
       link: "/"
@@ -35,7 +41,7 @@ export function Header() {
         </div>
 
         <div className="flex items-center gap-8">
-          <nav>
+          <nav className="hidden md:block">
             <ul className="flex gap-8 text-sm">
               {
                 menu.map((item, index) => (
@@ -48,6 +54,10 @@ export function Header() {
               }
             </ul>
           </nav>
+          <div className="w-full md:hidden flex items-center">
+            <MobileMenu menu={menu} />
+          </div>
+
           <Button className="bg-orange-600"> Download CV </Button>
         </div>
       </div>
