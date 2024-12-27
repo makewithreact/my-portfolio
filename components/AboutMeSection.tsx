@@ -16,7 +16,7 @@ export function AboutMeSection() {
       <Image src={aboutMeImage} alt="Jhon Doe" width={500} height={500} />
 
       <div className="flex flex-col gap-3 w-full mt-4 md:mt-0">
-        <h3 className="text-4xl font-bold text-center md:text-left">About Me</h3>
+        <h1 className="text-4xl font-bold text-center md:text-left">About Me</h1>
         <p className="text-muted-foreground text-center md:text-left">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
           suscipit, nunc id luctus.
