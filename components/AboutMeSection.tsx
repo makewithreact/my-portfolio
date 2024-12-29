@@ -12,7 +12,7 @@ const skills = [
 
 export function AboutMeSection() {
   return (
-    <section className="w-full py-5 flex flex-col md:flex-row gap-3 items-center">
+    <section id="about-me" className="w-full py-5 flex flex-col md:flex-row gap-3 items-center">
       <Image src={aboutMeImage} alt="Jhon Doe" width={500} height={500} />
 
       <div className="flex flex-col gap-3 w-full mt-4 md:mt-0">

@@ -4,7 +4,7 @@ import { Button } from './ui/button'
 
 export function HeroSection() {
   return (
-    <section className="w-full py-10 md:py-20 flex flex-col-reverse md:flex-row gap-3 items-center">
+    <section id="home" className="w-full py-10 md:py-40 flex flex-col-reverse md:flex-row gap-3 items-center">
       <div className="w-full flex flex-col gap-2">
         <h2 className="font-bold">Hi I am</h2>
         <h1 className="text-6xl font-bold text-orange-600">John Doe</h1>

@@ -7,6 +7,7 @@ import {
 } from "@/components/ui/dropdown-menu"
 import { MenuIcon } from "lucide-react"
 import { Menu } from "./Header"
+import Link from 'next/link'
 
 export function MobileMenu({ menu }: { menu: Menu[] }) {
   return (
@@ -18,8 +19,10 @@ export function MobileMenu({ menu }: { menu: Menu[] }) {
         {
           menu.map((item, index) => (
             <div key={index}>
-              <DropdownMenuItem>
-                {item.name}
+              <DropdownMenuItem asChild>
+                <Link href={item.link}>
+                  {item.name}
+                </Link>
               </DropdownMenuItem>
               {
                 index !== menu.length - 1 && (

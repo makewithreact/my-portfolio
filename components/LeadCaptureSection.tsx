@@ -3,7 +3,7 @@ import { Button } from './ui/button'
 
 export function LeadCaptureSection() {
   return (
-    <section className="w-full pt-5 pb-20 flex flex-col gap-3 items-center">
+    <section id="contact" className="w-full pt-5 pb-20 flex flex-col gap-3 items-center">
       <h1 className="text-4xl font-bold text-center md:text-left">
         Lets Design Together
       </h1>

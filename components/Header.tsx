@@ -11,29 +11,29 @@ export function Header() {
   const menu: Menu[] = [
     {
       name: "Home",
-      link: "/"
+      link: "/#home"
     },
     {
       name: "About Me",
-      link: "/"
+      link: "/#about-me"
     },
     {
       name: "Services",
-      link: "/"
+      link: "/#services"
     },
     {
       name: "Testimonials",
-      link: "/"
+      link: "/#testimonials"
     },
     {
       name: "Contact",
-      link: "/"
+      link: "/#contact"
     }
   ]
 
 
   return (
-    <header className="w-full bg-white border-b">
+    <header className="w-full bg-white border-b fixed z-10">
       <div className="w-full max-w-4xl p-4 mx-auto flex justify-between gap-3">
         <div className="flex items-center gap-1">
           <span className="text-2xl font-bold">My</span>

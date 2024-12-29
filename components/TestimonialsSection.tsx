@@ -12,7 +12,7 @@ import customer2 from "@/public/images/customer-02.png"
 
 export function TestimonialsSection() {
   return (
-    <section className="w-full pt-5 pb-20 flex flex-col gap-3 items-center">
+    <section id="testimonials" className="w-full pt-5 pb-20 flex flex-col gap-3 items-center">
       <h1 className="text-4xl font-bold text-center md:text-left">
         Testimonials
       </h1>
